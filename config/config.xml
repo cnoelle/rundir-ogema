@@ -168,12 +168,19 @@
 		<bundle dir="bin/apps" groupId="org.ogema.apps" artifactId="graph-generator" version="&ogema-version;" />
 		<bundle dir="bin/apps" groupId="org.ogema.apps" artifactId="logging-app" version="&ogema-version;" />    
                 
+		<!-- drivers -->
+			<!-- Homematic XmlRpc -->
+		<bundle dir="bin/drivers" groupId="org.apache.servicemix.bundles" artifactId="org.apache.servicemix.bundles.commons-httpclient" version="3.1_7" />
+		<bundle dir="bin/drivers" groupId="org.ogema.drivers" artifactId="homematic-xmlrpc-ll" version="&ogema-version;" startLevel="25"/>
+		<bundle dir="bin/drivers" groupId="org.ogema.drivers" artifactId="homematic-xmlrpc-hl" version="&ogema-version;" startLevel="25"/>
+		<bundle dir="bin/drivers" groupId="org.ogema.drivers" artifactId="homematic-xmlrpc-cfg" version="&ogema-version;" startLevel="25"/>
 
-		<!-- Remote REST connector and dependencies -->
+			<!-- Remote REST connector and dependencies -->
 		<bundle dir="bin/drivers" groupId="org.ogema.drivers" artifactId="remote-rest-connector" version="&ogema-version;"/>
 		<bundle dir="bin/drivers" groupId="org.apache.httpcomponents" artifactId="httpcore-osgi" version="4.4.14" />
 		<bundle dir="bin/drivers" groupId="org.apache.httpcomponents" artifactId="httpclient-osgi" version="4.5.13" />
 		
+		<bundle dir="bin/drivers" groupId="org.apache.httpcomponents" artifactId="httpcore-osgi" version="4.4.14" />
 
 	</bundles>
 
