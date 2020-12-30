@@ -174,7 +174,6 @@
 		<bundle dir="bin/drivers" groupId="org.apache.httpcomponents" artifactId="httpcore-osgi" version="4.4.14" />
 		<bundle dir="bin/drivers" groupId="org.apache.httpcomponents" artifactId="httpclient-osgi" version="4.5.13" />
 		
-		-->
 
 	</bundles>
 
