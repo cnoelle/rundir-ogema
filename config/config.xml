@@ -159,8 +159,8 @@
 		<bundle dir="bin/tools" groupId="de.dentrassi.osgi" artifactId="net.luminis.cmc" version="0.6.0" startLevel="3"/>
 		<bundle dir="bin/tools" groupId="org.ogema.apps" artifactId="common-services" version="&ogema-version;" />
 		<bundle dir="bin/tools" groupId="org.ogema.apps" artifactId="device-configurator" version="&ogema-version;" />
-		<!-- 
 		<bundle dir="bin/tools" groupId="org.ogema.tools" artifactId="grafana-base" version="&ogema-version;" />
+		<!-- 
 		<bundle dir="bin/tools" groupId="org.ogema.apps" artifactId="grafana-logging" version="&ogema-version;" />
 		<bundle dir="bin/tools" groupId="org.ogema.apps" artifactId="grafana-schedule-viewer" version="&ogema-version;" /> 
 		<bundle dir="bin/tools" groupId="org.ogema.apps" artifactId="graph-generator" version="&ogema-version;" />
@@ -182,6 +182,8 @@
 		
 		<!-- OGEMA Apps -->
 		<bundle dir="bin/apps" groupId="org.ogema.apps" artifactId="basic-switch-gui" version="&ogema-version;" />
+		<bundle dir="bin/apps" groupId="org.ogema.apps" artifactId="device-configuration" version="&widgets-version;" startLevel="30" />
+		<bundle dir="bin/apps" groupId="org.ogema.apps" artifactId="room-link" version="&widgets-version;" startLevel="30" />
 
 	</bundles>
 
@@ -200,14 +202,10 @@
 		<property key="ds.showtrace" value="false" />
 
 		<property key="org.osgi.service.http.port" value="8080" />
-		<!--
 		<property key="org.osgi.service.http.port.secure" value="8443" />
 		<property key="org.osgi.service.http.secure.enabled" value="true" />
-		-->
-
 		<property key="org.apache.felix.http.debug" value="false" />
-		
-		<!--
+
 		<property key="org.apache.felix.https.enable" value="true" />
 		<property key="org.apache.felix.https.keystore" value="config/keystore" />
 		<property key="org.apache.felix.https.keystore.password" value="ogemamns" />
@@ -216,7 +214,6 @@
 		<property key="org.ops4j.pax.web.ssl.keystore" value="myOgemaKeystore" />
 		<property key="org.ops4j.pax.web.ssl.password" value="ogemamns" />
 		<property key="org.ops4j.pax.web.ssl.keypassword" value="ogemamns" />
-		-->
 
 		<property key="felix.fileinstall.log.level" value="-1" />
 	</properties>

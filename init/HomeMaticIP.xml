@@ -1,12 +1,12 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
 <!--
-    See https://github.com/ogema/ogema/wiki/HomeMaticXmlRpc for more options.
+    See https://github.com/ogema/ogema/wiki/HomeMaticIPXmlRpc for more options.
     
     If you want to support both HomeMatic RF and HomeMatic IP simply create two instances of this resource under two different paths,
     e.g. "HomeMatic" and "HomeMaticIP".
 -->
 <og:resource xmlns:og="http://www.ogema-source.net/REST" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
-    <name>HomeMatic</name>
+    <name>HomeMaticIP</name>
     <type>org.ogema.drivers.homematic.xmlrpc.hl.types.HmLogicInterface</type>
     <active>true</active>
     <!-- Port of the XMLRPC service; tpyically 2001 (http) or 42001 (https) for HmRF, 2010 or 42010 for HmIP and 2000 or 42000 for HmWired -->
@@ -14,7 +14,7 @@
         <name>clientPort</name>
         <type>org.ogema.core.model.simple.IntegerResource</type>
         <active>true</active>
-        <value>2001</value>
+        <value>2010</value>
     </resource>
     <!-- alternatively to port -->
     <!--
